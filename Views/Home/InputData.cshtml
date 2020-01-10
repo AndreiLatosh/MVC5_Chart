@@ -1,0 +1,12 @@
+﻿@model WebApplication3.Models.UserData
+
+    <div id="searchresults">
+        <h2>@ViewBag.Message</h2>
+        @Html.ValidationSummary(true)
+        @Html.ValidationMessageFor(model => model.A)
+        @Html.ValidationMessageFor(model => model.B)
+        @Html.ValidationMessageFor(model => model.C)
+        @Html.ValidationMessageFor(model => model.RangeFrom)
+        @Html.ValidationMessageFor(model => model.RangeTo)
+        @Html.ValidationMessageFor(model => model.Step)
+    </div>
